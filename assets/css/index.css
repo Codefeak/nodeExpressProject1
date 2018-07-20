@@ -1,0 +1,53 @@
+body{
+    width: 80%;
+    background-color :#FFFFFF6e;
+    margin: 0 auto;
+} 
+
+.header{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+}
+
+.header>h1{
+    background:transparent;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin: 1vw 2vw;
+}
+
+h1>a{
+    
+    color: #55555560;
+    text-decoration: none;
+}
+
+button>a{
+    text-decoration: none;
+}
+
+#message{
+    margin-top: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+.contact-container{
+    background: #f3efef;
+}
+.contact-card-container{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(5, 180px);
+    justify-content: center
+}
+
+.contact-card{
+    width:100px;
+    background: #21eeedd0;
+    border: 1px solid grey;
+    border-radius: 5%;
+    margin:10px;
+}
+

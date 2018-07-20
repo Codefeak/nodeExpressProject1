@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class= "header">
+            <h1><a href = "/home">Home</a></h1>	
+            <h1><a href = "/about">About</a></h1>	
+            <h1><a href = "/contacts/list">Contact</a></h1>		
+    </div>
+    <button><a href="/addcontact"  type ="submit">Add New</a></button>
+    <div class = "contact-container">
+        <h1>Contacts</h1>
+        <div class = "contact-card-container">
+            <% list.forEach((item) =>{ %>
+                <div class= "contact-card">
+                    <li><%= item.firstName %></li>
+                    <li><%= item.lastName %></li>
+                    <li><%= item.email %></li>
+                </div>  
+            <% }) %>
+        </div>
+    </div>
+</body>
+</html>
